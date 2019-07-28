@@ -10,59 +10,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/03-DRF-LEVEL-ONE/newsapi_step1/news/api/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1875">
-              <caret line="95" lean-forward="true" selection-start-line="95" selection-end-line="95" />
-              <folding>
-                <element signature="e#0#33#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/03-DRF-LEVEL-ONE/newsapi_step1/news/api/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
-              <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/03-DRF-LEVEL-ONE/newsapi_step2/news/api/views.py">
+        <entry file="file://$PROJECT_DIR$/03-DRF-LEVEL-ONE/newsapi_step2/news/api/serializers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-544">
-              <caret line="14" column="35" lean-forward="true" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+            <state relative-caret-position="-58">
+              <caret line="34" column="3" lean-forward="true" selection-start-line="34" selection-start-column="3" selection-end-line="48" selection-end-column="20" />
               <folding>
-                <element signature="e#0#33#0" expanded="true" />
+                <element signature="e#0#29#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/03-DRF-LEVEL-ONE/newsapi_step2/news/api/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
-              <caret line="1" column="75" selection-start-line="1" selection-start-column="75" selection-end-line="1" selection-end-column="75" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/03-DRF-LEVEL-ONE/newsapi_step2/newsapi/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="20" column="36" lean-forward="true" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -83,6 +38,7 @@
         <option value="$PROJECT_DIR$/03-DRF-LEVEL-ONE/newsapi_step1/news/api/urls.py" />
         <option value="$PROJECT_DIR$/03-DRF-LEVEL-ONE/newsapi_step2/news/api/views.py" />
         <option value="$PROJECT_DIR$/03-DRF-LEVEL-ONE/newsapi_step2/news/api/urls.py" />
+        <option value="$PROJECT_DIR$/03-DRF-LEVEL-ONE/newsapi_step2/news/api/serializers.py" />
       </list>
     </option>
   </component>
@@ -108,6 +64,19 @@
               <item name="The-Complete-Guide-To-DRF-and-VueJS-master" type="b2602c69:ProjectViewProjectNode" />
               <item name="The-Complete-Guide-To-DRF-and-VueJS-master" type="462c0819:PsiDirectoryNode" />
               <item name="03-DRF-LEVEL-ONE" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="The-Complete-Guide-To-DRF-and-VueJS-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="The-Complete-Guide-To-DRF-and-VueJS-master" type="462c0819:PsiDirectoryNode" />
+              <item name="03-DRF-LEVEL-ONE" type="462c0819:PsiDirectoryNode" />
+              <item name="newsapi" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="The-Complete-Guide-To-DRF-and-VueJS-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="The-Complete-Guide-To-DRF-and-VueJS-master" type="462c0819:PsiDirectoryNode" />
+              <item name="03-DRF-LEVEL-ONE" type="462c0819:PsiDirectoryNode" />
+              <item name="newsapi" type="462c0819:PsiDirectoryNode" />
+              <item name="news" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="The-Complete-Guide-To-DRF-and-VueJS-master" type="b2602c69:ProjectViewProjectNode" />
@@ -189,11 +158,11 @@
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24983476" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24983476" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Python Console" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.25070822" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.25070822" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -364,25 +333,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/03-DRF-LEVEL-ONE/newsapi/news/api/serializers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="54" column="38" selection-start-line="54" selection-start-column="38" selection-end-line="54" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/03-DRF-LEVEL-ONE/newsapi/news/api/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-100">
-          <folding>
-            <element signature="e#0#33#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/03-DRF-LEVEL-ONE/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
@@ -485,7 +435,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/03-DRF-LEVEL-ONE/newsapi_step2/news/api/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
+        <state relative-caret-position="-144">
           <caret line="1" column="75" selection-start-line="1" selection-start-column="75" selection-end-line="1" selection-end-column="75" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
@@ -493,12 +443,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/03-DRF-LEVEL-ONE/newsapi_step2/news/api/views.py">
+    <entry file="file://$PROJECT_DIR$/03-DRF-LEVEL-ONE/newsapi/news/api/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-544">
-          <caret line="14" column="35" lean-forward="true" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+        <state relative-caret-position="350">
+          <caret line="54" column="44" lean-forward="true" selection-start-line="54" selection-start-column="44" selection-end-line="54" selection-end-column="44" />
           <folding>
             <element signature="e#0#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/03-DRF-LEVEL-ONE/newsapi_step2/news/api/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1225">
+          <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/03-DRF-LEVEL-ONE/newsapi/news/api/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="54" column="38" selection-start-line="54" selection-start-column="38" selection-end-line="54" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/03-DRF-LEVEL-ONE/newsapi_step2/news/api/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-58">
+          <caret line="34" column="3" lean-forward="true" selection-start-line="34" selection-start-column="3" selection-end-line="48" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
           </folding>
         </state>
       </provider>
