@@ -1,6 +1,8 @@
 from django.urls import path
-from ebooks.api.views import (EbookDetailAPIView, EbookListCreateAPIView,
-                              ReviewCreateAPIView, ReviewDetailAPIView)
+# from ebooks.api.views import (EbookDetailAPIView, EbookListCreateAPIView,
+#                               ReviewCreateAPIView, ReviewDetailAPIView)
+from ebooks.api.views import EbookListCreateAPIView
+
 
 urlpatterns = [
     path("ebooks/", 
