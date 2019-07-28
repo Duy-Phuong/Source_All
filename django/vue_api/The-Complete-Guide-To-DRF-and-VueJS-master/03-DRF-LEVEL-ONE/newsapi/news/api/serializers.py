@@ -7,8 +7,8 @@ from news.models import Article, Journalist
 class ArticleSerializer(serializers.ModelSerializer):
 
     time_since_publication = serializers.SerializerMethodField()
-    # author = JournalistSerializer(read_only=True)
-    # author = serializers.StringRelatedField()
+    # author = JournalistSerializer(read_only=True) # step 2
+    # author = serializers.StringRelatedField() # step 1
 
     class Meta:
         model = Article
@@ -40,10 +40,11 @@ class ArticleSerializer(serializers.ModelSerializer):
 
 
 class JournalistSerializer(serializers.ModelSerializer):
+    # step 3
     articles = serializers.HyperlinkedRelatedField(many=True,
                                                    read_only=True,
-                                                   view_name="article-detail")
-    # articles = ArticleSerializer(many=True, read_only=True)
+                                                   view_name="article-detail") # get name from urls
+    # articles = ArticleSerializer(many=True, read_only=True) # step 2
 
     class Meta:
         model = Journalist
