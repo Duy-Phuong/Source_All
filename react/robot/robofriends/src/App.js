@@ -9,9 +9,20 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      robots: robots,
+      robots: [],
       searchfield: ""
     };
+  }
+
+  componentDidMount() {
+    console.log("componentDidMount");
+    fetch("https://jsonplaceholder.typicode.com/users")
+      .then(response => {
+        return response.json();
+      })
+      .then(user => {
+        this.setState({ robots: user });
+      });
   }
 
   onSearchChange = event => {
@@ -27,17 +38,21 @@ class App extends Component {
         .includes(this.state.searchfield.toLowerCase());
     });
     console.log(filtersRobot);
-    return (
-      <div className="tc">
-        <h1>Robot friends</h1>
-        <SearchBox searchChange={this.onSearchChange} />
-        <CardList robots={filtersRobot} />
-        {
-          // sau khi cập nhật state
-          // <CardList robots={this.state.robots} />
-        }
-      </div>
-    );
+    if (this.state.robots.length === 0) {
+      return <h1>Loading...</h1>;
+    } else {
+      return (
+        <div className="tc">
+          <h1>Robot friends</h1>
+          <SearchBox searchChange={this.onSearchChange} />
+          <CardList robots={filtersRobot} />
+          {
+            // sau khi cập nhật state
+            // <CardList robots={this.state.robots} />
+          }
+        </div>
+      );
+    }
   }
 }
 
