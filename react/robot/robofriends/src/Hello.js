@@ -14,6 +14,7 @@ import "tachyons";
 //   }
 // }
 
+// bỏ từ khóa this vì k là object
 const Hello = props => {
   return (
     <div className="tc i f1">
