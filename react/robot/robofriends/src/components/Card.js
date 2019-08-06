@@ -1,5 +1,5 @@
 import React from "react";
-import "./Card.css";
+import "../Card.css";
 import "tachyons";
 
 const Card = ({ name, email, id }) => {

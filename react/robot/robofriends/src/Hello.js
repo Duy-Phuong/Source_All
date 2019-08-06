@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./App.css";
+import "./containers/App";
 import "tachyons";
 
 // class Hello extends Component {
