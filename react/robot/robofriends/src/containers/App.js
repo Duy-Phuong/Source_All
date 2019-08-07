@@ -5,14 +5,40 @@ import CardList from "../components/CardList";
 import { robots } from "../robots";
 import SearchBox from "../components/SearchBox";
 import Scroll from "../components/Scroll";
-import { setSearchField, requestRobots } from "../actions";
+import { setSearchField } from "../actions";
+// import { setSearchField, requestRobots } from "../actions";
+
+import { connect } from "react-redux";
+
+// parameter state comes from index.js provider store state(rootReducers)
+const mapStateToProps = state => {
+  return {
+    searchField: state.searchField
+    // robots: state.requestRobots.robots,
+    // isPending: state.requestRobots.isPending
+  };
+};
+
+// dispatch the DOM changes to call an action. note mapStateToProps returns object, mapDispatchToProps returns function
+// the function returns an object then uses connect to change the data from redecers.
+const mapDispatchToProps = dispatch => {
+  return {
+    onSearchChange: event => dispatch(setSearchField(event.target.value))
+    // onRequestRobots: () => dispatch(requestRobots())
+  };
+};
 
 class App extends Component {
   constructor() {
     super();
+    // this.state = {
+    //   robots: [],
+    //   searchfield: ""
+    // };
+
+    // step connect
     this.state = {
-      robots: [],
-      searchfield: ""
+      robots: []
     };
   }
 
@@ -28,16 +54,22 @@ class App extends Component {
       });
   }
 
-  onSearchChange = event => {
-    // console.log(event);
-    // console.log(event.target.value);
-    this.setState({ searchfield: event.target.value });
-  };
+  // step connect will remove
+  // onSearchChange = event => {
+  //   // console.log(event);
+  //   // console.log(event.target.value);
+  //   this.setState({ searchfield: event.target.value });
+  // };
 
   render() {
-    const { robots, searchfield } = this.state;
+    // const { robots, searchfield } = this.state;
+
+    // step connect
+    const { robots } = this.state;
+    const { searchField, onSearchChange } = this.props;
+
     const filtersRobot = robots.filter(robot => {
-      return robot.name.toLowerCase().includes(searchfield.toLowerCase());
+      return robot.name.toLowerCase().includes(searchField.toLowerCase());
     });
     console.log(filtersRobot);
     if (robots.length === 0) {
@@ -46,7 +78,11 @@ class App extends Component {
       return (
         <div className="tc">
           <h1>Robot friends</h1>
-          <SearchBox searchChange={this.onSearchChange} />
+          {
+            // step connect
+            // <SearchBox searchChange={this.onSearchChange} />
+          }
+          <SearchBox searchChange={onSearchChange} />
           <Scroll>
             <CardList robots={filtersRobot} />
           </Scroll>
@@ -61,4 +97,11 @@ class App extends Component {
   }
 }
 
-export default App;
+// export default App;
+
+// step 7
+// action done from mapDispatchToProps will channge state from mapStateToProps
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(App);
