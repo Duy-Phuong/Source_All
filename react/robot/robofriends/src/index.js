@@ -43,7 +43,13 @@ import { requestRobots, searchRobots } from "./reducers";
 // step 6 start
 const store = createStore(searchRobots);
 
-ReactDOM.render(<App store={store} />, document.getElementById("root"));
+// ReactDOM.render(<App store={store} />, document.getElementById("root"));
+ReactDOM.render(
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  document.getElementById("root")
+);
 // step 6 end
 
 // If you want your app to work offline and load faster, you can change
