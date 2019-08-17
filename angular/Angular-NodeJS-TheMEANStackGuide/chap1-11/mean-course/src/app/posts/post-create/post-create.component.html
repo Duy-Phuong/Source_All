@@ -1,0 +1,30 @@
+<h2 style="background: yellow">Post create component</h2>
+<!-- step 2 start -->
+
+<!-- <textarea rows="6" [value]="newPost" #postInput></textarea>
+<hr />
+<button (click)="onAddPost(postInput)">save post</button>
+<p>{{ newPost }}</p> -->
+
+<!-- step 2 end -->
+
+<!-- step 3 start -->
+
+<!-- <textarea rows="6" [(ngModel)]="enteredContent"></textarea>
+<hr />
+<button (click)="onAddPost()">save post</button>
+<p>{{ newPost }}</p> -->
+
+<!-- step 3 end -->
+
+<!-- step 4 start -->
+<mat-card>
+  <mat-form-field>
+    <textarea matInput rows="6" [(ngModel)]="enteredContent"></textarea>
+  </mat-form-field>
+  <button mat-raised-button color="accent" (click)="onAddPost()">
+    Save Post
+  </button>
+  <p>{{ newPost }}</p>
+</mat-card>
+<!-- step 4 end -->
