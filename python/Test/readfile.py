@@ -2,9 +2,10 @@ import os
 import shutil
 
 # path = 'F:\\Tai-lieu\\Videos\\Udemy\\Spring & Hibernate for Beginners (includes Spring Boot)'
-path = 'F:\\Tai-lieu\\Videos\\Udemy\\Full Stack Java developer - Java + JSP + Restful WS + Spring'
+path = 'F:\\Tai-lieu\\Videos\\Udemy\\Spring & Hibernate for Beginners (includes Spring Boot)'
+
 old_path = path
-folder_copy = 'D:\\TaiLieu\\Docs\\Note git\\Source\\full-stack-java-developer-java'
+folder_copy = 'D:\\TaiLieu\\Docs\\Note git\\Source\\java spring'
 
 files = []
 dir = []
@@ -16,6 +17,8 @@ folders = []
 folder_name = []
 # r=root, d=directories, f = files
 for r, d, f in os.walk(path):
+    if r != path:
+        break
     idx = 0
     for folder in d:
         folders.append(folder)
@@ -27,7 +30,7 @@ for r, d, f in os.walk(path):
 
         for r1, d1, f1 in os.walk(os.path.join(r, folder)):
             for file in f1:
-                if '.mp4' in file or '.html' in file:
+                if '.mp4' in file or '.html' in file or '.pdf' in file:
                     print('### {}'.format(file.split('.mp4')[0]))
 print("======== list file ========")
 
@@ -54,7 +57,7 @@ def copy_func(path):
 copy_func(path)
 # for f in files:
 #     print(f)
-print("======== file ========")
+# print("======== file ========")
 # for f in name:
 #     print(f)
 
